@@ -1,7 +1,7 @@
 # Data Analysis in Excel: Bike Sales & Customer Insights
 
 ## Objective
-Perform end-to-end data analysis in Excel—from cleaning and transforming raw customer data, to analyzing purchase trends, to building an interactive dashboard—in order to identify key factors influencing bike purchase decisions.
+End-to-end data analysis in Excel—from data cleaning and transforming raw customer data, to analyzing purchase trends, to building an interactive dashboard, in order to identify key factors influencing bike purchase decisions.
 
 ---
 
@@ -18,8 +18,7 @@ The dataset contains customer records with attributes such as:
 ## 1. Data Cleaning & Preparation
 
 ### Steps Taken
-- **Age Brackets:** Categorized using Excel formula:```excel
-  =IF(L2>54,"55+", IF(L2>=31,"31-54", IF(L2<31,"0-30","Invalid"))) ```
+- **Age Brackets:** Categorized using:``` =IF(L2>54,"55+", IF(L2>=31,"31-54", IF(L2<31,"0-30","Invalid"))) ```
 - **Column Standardization:** Corrected column names (e.g., `Martial Stal` → `Marital Status`, `Home Ownt` → `Home Own`)  
 - **Categorical Value Standardization:**  
   - Marital Status: `M` → `Married`, `S` → `Single`  
@@ -28,7 +27,7 @@ The dataset contains customer records with attributes such as:
 - **Numeric Formatting:** Standardized Income format (removed trailing `.00`)  
 - **Target Variable:** Renamed to `Purchased Bike` for consistency  
 
-### Excel Tools Used
+### Few of the Excel Tools Used:
 - Formulas: `IF`, `XLOOKUP`, `TRIM`  
 - Find & Replace  
 - Data Validation & Conditional Formatting  
@@ -38,7 +37,7 @@ The dataset contains customer records with attributes such as:
 
 ## 2. Pivot Table Analysis: Income, Gender, and Bike Purchase Trends
 
-### Pivot Table Steps
+
 - Created Pivot Tables to analyze:  
   - **Average Income per Purchase**  
   - **Customer Commute Distance**  
@@ -62,8 +61,8 @@ The dataset contains customer records with attributes such as:
 
 **Visualizations (Charts):**
 1. **Avg Income Per Purchase** – Clustered Column chart comparing income by gender and purchase decision  
-2. **Customer Age Brackets** – Stacked Column chart showing purchase distribution across age groups  
-3. **Customer Commute Distance** – Bar chart analyzing how commute distance relates to bike purchases  
+2. **Customer Age Brackets** – Line chart showing purchase distribution across age groups  
+3. **Customer Commute Distance** – analyzing how commute distance relates to bike purchases  
 
 **Dashboard Features:**
 - Interactive slicers for dynamic filtering  
@@ -74,7 +73,6 @@ The dataset contains customer records with attributes such as:
 ---
 
 ## Summary: Excel Analysis Outcomes
-This analysis transformed raw customer data into actionable insights through:
 
 - **Data Cleaning in Excel:** Standardized data using formulas and built-in tools  
 - **Pivot Table Analysis:** Revealed trends across demographics and purchase behavior  
